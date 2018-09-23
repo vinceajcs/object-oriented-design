@@ -1,4 +1,4 @@
-package hw5;
+package fishtank;
 
 public class BottomFeedingBehavior extends FishBehavior {
     private double xSpeed = 0.3;

@@ -1,4 +1,4 @@
-package hw5;
+package fishtank;
 
 public class ErraticBehavior extends FishBehavior {
     private double xSpeed = 5.0;

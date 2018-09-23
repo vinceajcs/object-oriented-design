@@ -1,4 +1,4 @@
-package hw5;
+package fishtank;
 
 import javafx.scene.image.Image;
 
@@ -17,4 +17,3 @@ public class Octopus implements FishType {
    public Image rightImage() {
       return rightimage;
    }}
-

@@ -1,4 +1,4 @@
-package hw5;
+package fishtank;
 
 
 public class NormalBehavior extends FishBehavior{

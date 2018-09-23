@@ -1,4 +1,4 @@
-package hw5;
+package fishtank;
 
 import javafx.application.Application;
 import javafx.animation.AnimationTimer;
@@ -18,7 +18,7 @@ public class Aquarium extends Application {
             new MeanFactory(),
             new OctopusFactory(),
             new DolphinFactory()};
-   
+
    public void start(Stage stage) {
       Pane p = new Pane();
       p.setBackground(new Background(
@@ -27,17 +27,17 @@ public class Aquarium extends Application {
       FishTank tank = new FishTank(p, factories);
       MenuBar bar = createMenuBar(tank);
       p.getChildren().add(bar);
-     
+
       Scene scene = new Scene(p, INIT_TANK_WD, INIT_TANK_HT);
       stage.setScene(scene);
       stage.setTitle("Fish Tank");
       stage.show();
-      
+
       AnimationTimer timer = new FishAnimation(tank, p);
       timer.start();
    }
 
-   private MenuBar createMenuBar(FishTank tank) {   
+   private MenuBar createMenuBar(FishTank tank) {
       Menu animation = new Menu("Animation");
       MenuItem start = new MenuItem("start");
       start.setOnAction(e->tank.startAnimation());
@@ -60,7 +60,7 @@ public class Aquarium extends Application {
       bar.getMenus().addAll(animation, newfish);
       return bar;
    }
-   
+
    public static void main(String[] args) {
       Application.launch(args);
    }

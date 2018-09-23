@@ -1,4 +1,4 @@
-package hw5;
+package fishtank;
 
 public class DolphinFactory extends FishFactory {
     public Fish create() {

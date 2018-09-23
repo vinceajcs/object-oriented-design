@@ -1,4 +1,4 @@
-package hw5;
+package fishtank;
 
 public abstract class FishBehavior {
     public abstract double getXSpeed();
